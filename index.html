@@ -272,6 +272,174 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/19/bootstrap学习第一天/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bugClown">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar1.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bugClown">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/19/bootstrap学习第一天/" itemprop="url">bootstrap学习第一天</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-19T16:02:42+08:00">
+                2018-03-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="bootstrap学习第一天"><a href="#bootstrap学习第一天" class="headerlink" title="bootstrap学习第一天"></a>bootstrap学习第一天</h1><p>##step 1 、下载<a href="http://download.how2j.cn/543/bootstrap.rar" target="_blank" rel="noopener">bootstrap</a></p>
+<p>##step 2 .将bootstrap引入html5中<br>code:<br>`<script src="js/jquery/2.0.0/jquery.min.js"></script></p>
+<p><link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet"></p>
+<p><script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>`</p>
+<p>##step3 学习bootstrap样式</p>
+<p>###按钮button：<br>`<!-- <button class="btn btn-success">成功按钮</button> --><br>&lt;!– <button type="submit" class="btn btn-primary">提交按钮</button></p>
+<p><button type="button" class="btn btn-info">信息按钮</button></p>
+<p><button type="submit" class="btn btn-link">表现为链接</button></p>
+<p><button type="button" class="btn disabled">无效按钮</button> –&gt;`</p>
+<p>###表格table:</p>
+<p><code>table class=&quot;table table-border table-hover&quot;&gt;
+    &lt;thead&gt;
+        &lt;th&gt;头像&lt;/th&gt;
+        &lt;th&gt;名字&lt;/th&gt;
+        &lt;th&gt;HP&lt;/th&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;img width=&quot;20px&quot; src=&quot;http://how2j.cn/study/bootstrap/lol/gareen.png&quot; /&gt;&lt;/td&gt;
+            &lt;td&gt;盖伦&lt;/td&gt;
+            &lt;td&gt;700&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;img width=&quot;20px&quot; src=&quot;http://how2j.cn/study/bootstrap/lol/teemo.png&quot; /&gt;&lt;/td&gt;
+            &lt;td&gt;提莫&lt;/td&gt;
+            &lt;td&gt;500&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr class=&quot;success&quot;&gt;
+            &lt;td&gt;&lt;img width=&quot;20px&quot; src=&quot;http://how2j.cn/study/bootstrap/lol/akali.png&quot; /&gt;&lt;/td&gt;
+            &lt;td&gt;阿卡丽&lt;/td&gt;
+            &lt;td&gt;510&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></p>
+<p>实例样图：略</p>
+<p>####图片<br>圆角 img-radius<br>圆 img-circle<br>缩略图 img-thumbnail</p>
+<p>case:</p>
+<pre><code>&lt;img src=&quot;http://how2j.cn/example.gif&quot; class=&quot;img-rounded&quot;&gt;
+</code></pre><p>###表单<br>    输入元素使用form-control 可以去除阴影，边框附带淡蓝色，输入状态更加柔和</p>
+<p>###文本<br>示例 1 : 淡灰色文本    text-muted<br>示例 2 : 强调的文本    text-primary<br>示例 3 : 操作成功文本    text-success<br>示例 4 : 提示信息文本    text-info<br>示例 5 : 警告文本    text-warning<br>示例 6 : 危险操作文本    text-danger</p>
+<p>###背景<br>示例 1 : 强调的背景    bg-primary<br>示例 2 : 成功操作文字的背景<br>示例 3 : 信息提示文字的背景<br>示例 4 : 警告提示文字的背景<br>示例 5 : 危险提示文字的背景    </p>
+<p>###栅格系统</p>
+<ul>
+<li><p>运用Bootstrap的栅格系统，可以做出像table那样定义多少行，多少列效果，但是又比table灵活。<br>运用Bootstrap的栅格系统，首选需要准备一个class=container的div 紧接着需要一个class=row的<br>div，表示行 再挨着的div，就是列了。</p>
+<p>Bootstrap的栅格系统会默认把一行，分成12列。</p>
+</li>
+<li><p>列表项</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/19/写九宫格项目的第一天/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -456,7 +624,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
