@@ -512,31 +512,72 @@
         
           
             <p>首先，明确目标，即要知道做什么，接下来又该怎么做<br>在项目前期，我列出了如下步骤<br>step1: 创建9个格子（3*3），即9个div<br>step2:添加按钮2个（开始闪，结束闪）<br>step3:创建css样式<br>step4:添加点击事件(js代码)，var xxx = onload{xxx.onclick=function(){}}<br>step5:随机变色</p>
-<h1 id="前期代码html-css"><a href="#前期代码html-css" class="headerlink" title="前期代码html+css"></a><h1>前期代码html+css</h1></h1><p><code><br>‘’’<br>        &lt;!DOCTYPE html&gt;<br>        <html><br>            <head><br>                <meta charset="utf-8"><br>                <title></title><br>                <style><br>                    div{<br>                        border: 2px red solid ;<br>                        height: 60px;<br>                        width: 60px;<br>                        float: left ;<br>                        padding: 30px;<br>                        margin: 5px;<br>                        background-color: #FF0000;<br>                        border-radius: 10px;<br>                    }<br>                    body{<br>                        /<em>background-color: #B8860B;</em>/<br>                        width:500px;<br>                        margin: 0 auto;<br>                    }<br>                    button{<br>                        clear: both;<br>                        width:100px;<br>                        height:50px;<br>                        background-color: yellow;<br>                        border-radius: 10px;<br>                        border: 2px red solid;<br>                        position: relative;<br>                        left: 100px;<br>                    }<br>                    button:hover{<br>                        background-color: darkgoldenrod;<br>                    }<br>                </style><br>            </head><br>            <body><br>                &lt;!–/*</body></html></code></p>
-<pre><code>         * step
-         *1、创建9个格子&lt;div&gt;*9
-         2.添加按钮
-         3.加上border
-         4.添加点击事件
-             4.1随机变色
-         */
+<pre><code># &lt;h1&gt;前期代码html+css&lt;/h1&gt;
+&lt;code&gt;
+&apos;&apos;&apos;
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+                &lt;meta charset=&quot;utf-8&quot; /&gt;
+                &lt;title&gt;&lt;/title&gt;
+                &lt;style&gt;
+                    div{
+                        border: 2px red solid ;
+                        height: 60px;
+                        width: 60px;
+                        float: left ;
+                        padding: 30px;
+                        margin: 5px;
+                        background-color: #FF0000;
+                        border-radius: 10px;
+                    }
+                    body{
+                        /*background-color: #B8860B;*/
+                        width:500px;
+                        margin: 0 auto;
+                    }
+                    button{
+                        clear: both;
+                        width:100px;
+                        height:50px;
+                        background-color: yellow;
+                        border-radius: 10px;
+                        border: 2px red solid;
+                        position: relative;
+                        left: 100px;
+                    }
+                    button:hover{
+                        background-color: darkgoldenrod;
+                    }
+                &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;!--/*
+                 * step
+                 *1、创建9个格子&lt;div&gt;*9
+                 2.添加按钮
+                 3.加上border
+                 4.添加点击事件
+                     4.1随机变色
+                 */
 
-        //step1--&gt;
-        &lt;div&gt;&lt;/div&gt;
-        &lt;div&gt;&lt;/div&gt;
-        &lt;div&gt;&lt;/div&gt;
-        &lt;div&gt;&lt;/div&gt;
-        &lt;div&gt;&lt;/div&gt;
-        &lt;div&gt;&lt;/div&gt;
-        &lt;div&gt;&lt;/div&gt;
-        &lt;div&gt;&lt;/div&gt;
-        &lt;div&gt;&lt;/div&gt;
-        &lt;button id=&quot;btnon&quot;&gt;开始闪&lt;/button&gt;
-        &lt;button id=&quot;btnoff&quot;&gt;结束闪&lt;/button&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</code></pre><p>‘’’<br></p>
-<h2 id="下面讲讲代码含义"><a href="#下面讲讲代码含义" class="headerlink" title="下面讲讲代码含义"></a>下面讲讲代码含义</h2><p>html基本框架<code></code><html><head></head><body></body></html>这个没问题，第一步的div标签相当于创建了空格子（区域），其次使用<button></button>{:target=”_blank”}标签创建按钮，也可以这样<code> <input type="button" id="xxx" value=""> </code></p>
+                //step1--&gt;
+                &lt;div&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;/div&gt;
+                &lt;button id=&quot;btnon&quot;&gt;开始闪&lt;/button&gt;
+                &lt;button id=&quot;btnoff&quot;&gt;结束闪&lt;/button&gt;
+            &lt;/body&gt;
+        &lt;/html&gt;
+&apos;&apos;&apos;
+&lt;/code&gt;
+</code></pre><h2 id="下面讲讲代码含义"><a href="#下面讲讲代码含义" class="headerlink" title="下面讲讲代码含义"></a>下面讲讲代码含义</h2><p>html基本框架<code>&lt;code&gt;&lt;/code&gt;&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;&lt;/code&gt;</code>这个没问题，第一步的div标签相当于创建了空格子（区域），<code>其次使用&lt;button&gt;&lt;/button&gt;{:target=&quot;_blank&quot;}</code>标签创建按钮，也可以这样<code>&lt;code&gt; &lt;input type=&quot;button&quot;  id=&quot;xxx&quot; value=&quot;&quot; /&gt; &lt;/code&gt;</code></p>
 <p>然后给各个标签添加css样式,一般来说，都是padding，margin，width,height,背景颜色background-color,字体颜色color</p>
 <p>接下来第二天，我们继续学习写入js，进行点击事件的编写。</p>
 
